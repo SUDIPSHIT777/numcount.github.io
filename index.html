@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="ELEMENTS/JAVASCRIPT/cprogram.js" defer></script>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+    }
+
+    h1 {
+        color: rgb(0, 255, 170);
+    }
+
+    #div {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    button {
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 1.3rem;
+        font-weight: 600;
+        background-color: rgb(0, 255, 170);
+        color: black;
+        opacity: 0.4;
+        transition: 0.5s ease;
+    }
+
+    .d {
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid white;
+    }
+
+    button:hover {
+        opacity: 1;
+    }
+
+    @media(max-width: 760px) {
+        h1 {
+            font-size: 3.5rem;
+        }
+
+        #div {
+            width: 100%;
+            gap: 50px;
+            margin: 10px;
+        }
+
+        button {
+            padding: 20px;
+            font-size: 2rem;
+        }
+
+        .d {
+            padding: 18px;
+        }
+
+        #num {
+            font-size: 3rem;
+        }
+    }
+</style>
+
+<body>
+    <div id="div">
+        <h1>Increment & Decrement</h1>
+        <!-- <input type="text" id="num" value="0" /> -->
+        <div class="d">
+            <h2 id="num">0</h2>
+        </div>
+        <button id="click0" onclick="incres()">Increment</button>
+        <button id="click1" onclick="decres()">Decrement</button>
+        <button id="click2" onclick="res()">Reset</button>
+    </div>
+
+</body>
+
+</html>
